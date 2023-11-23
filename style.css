@@ -85,30 +85,10 @@ body {
   font-size: var(--fs-400);
   color: var(--clr-dark-grayish-blue);
   background-color: var(--clr-dark-cyan);
-
-  position: relative;
-}
-body::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: url(/images/bg-pattern-bottom.svg);
-  background-repeat: no-repeat;
-  bottom: -50%;
-  right: -50%;
-}
-body::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: url(/images/bg-pattern-top.svg);
-  background-repeat: no-repeat;
-  top: -45%;
-  left: -45%;
-  transform: rotate(540deg);
-  z-index: -1;
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 57vw bottom 35vh, left 48vw top 52vh;
 }
 
 .profile {
